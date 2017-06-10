@@ -42,7 +42,7 @@ user@laptop:~/safeplacewithkey$ curl http://127.0.0.1:8080/v1.0/password/jose -o
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100   128  100   128    0     0   1030      0 --:--:-- --:--:-- --:--:--  1040
-docker run -t -v $PWD:/keys/ --entrypoint python passworddeliverymeetsvernam:0.0.1 -m vernam -d -i /keys/passwordfile -o /keys/clearpassword -k /keys/keyfile
+user@laptop:~/safeplacewithkey$ docker run -t -v $PWD:/keys/ --entrypoint python passworddeliverymeetsvernam:0.0.1 -m vernam -d -i /keys/passwordfile -o /keys/clearpassword -k /keys/keyfile
 Could not find config file, creating a default one
 input file: /keys/passwordfile, output file: /keys/clearpassword, config file: config.yaml, key file: /keys/keyfile, operation mode: raw
 12 of 2048 bytes will be in use after this action
